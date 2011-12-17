@@ -64,6 +64,9 @@ typedef struct framebuffer_device_t {
     /* max swap interval supported by this framebuffer */
     const int       maxSwapInterval;
 
+    /* number of framebuffers */
+    const int       numFramebuffers;
+
     int reserved[8];
 
     /*
@@ -125,6 +128,8 @@ typedef struct framebuffer_device_t {
      */
 
     int (*compositionComplete)(struct framebuffer_device_t* dev);
+
+    int (*lockBuffer) (struct framebuffer_device_t* dev, int);
 
     /*
      * This hook is OPTIONAL.
