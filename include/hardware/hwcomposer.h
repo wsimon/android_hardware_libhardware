@@ -85,7 +85,7 @@ enum {
      * that this layer is not updating. The HAL can use this to determine if it
      * needs to draw this layer.
      */
-    //HWC_LAYER_NOT_UPDATING = 0x00000002,
+    HWC_LAYER_NOT_UPDATING = 0x00000002,
 
     /* implementation-specific private usage flags */
     HWC_FLAGS_PRIVATE_0       = 0x10000000,
