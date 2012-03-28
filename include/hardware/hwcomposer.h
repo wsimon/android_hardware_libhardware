@@ -174,9 +174,6 @@ typedef struct hwc_layer {
     /* blending to apply during composition */
     int32_t blending;
     
-    /* alpha value of the layer */
-    int32_t alpha;
-
 #ifdef QCOM_HARDWARE
     /* alpha value of the layer */
     int32_t alpha;
